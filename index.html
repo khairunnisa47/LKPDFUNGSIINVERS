@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD INVERS FUNGSI - Matematika</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen p-4">
+    <div class="max-w-4xl mx-auto">
+        <!-- Header -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+            <div class="text-center">
+                <h1 class="text-3xl font-bold text-indigo-800 mb-2">LEMBAR KERJA PESERTA DIDIK (LKPD)</h1>
+                <h2 class="text-xl font-semibold text-gray-700 mb-1">INVERS FUNGSI</h2>
+                <div class="flex justify-between items-center mt-4 text-sm text-gray-600">
+                    <div>
+                        <p><strong>Mata Pelajaran:</strong> Matematika</p>
+                        <p><strong>Kelas/Semester:</strong> XI/1</p>
+                    </div>
+                    <div>
+                        <p><strong>Waktu:</strong> 20 menit</p>
+                        <p><strong>Kelompok:</strong> <span class="border-b border-gray-400 px-2">_______</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tujuan Pembelajaran -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+            <h3 class="text-lg font-bold text-pink-700 mb-3 flex items-center">
+                <span class="bg-pink-100 rounded-full p-2 mr-3">🎯</span>
+                Tujuan Pembelajaran
+            </h3>
+            <p class="text-gray-700">Setelah mengerjakan LKPD ini, peserta didik dapat menentukan invers dari suatu fungsi dengan menggunakan langkah-langkah yang sistematis.</p>
+        </div>
+
+
+
+        <!-- Discovery Learning: Eksplorasi Konsep -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+            <h3 class="text-lg font-bold text-indigo-700 mb-4 flex items-center">
+                <span class="bg-indigo-100 rounded-full p-2 mr-3">🔍</span>
+                Mari Kita Eksplorasi: Membeli Donat di Koperasi
+            </h3>
+            
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
+                <p class="text-gray-700 mb-2"><strong>Situasi:</strong> Di koperasi sekolah, harga 1 donat adalah Rp4.000</p>
+                <p class="text-gray-700 font-semibold">Mari kita temukan hubungan antara jumlah donat dan total uang!</p>
+            </div>
+
+            <!-- Pertanyaan Eksplorasi -->
+            <div class="space-y-6">
+                <!-- Pertanyaan 1 -->
+                <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-400">
+                    <h4 class="font-semibold text-blue-700 mb-3">🤔 Pertanyaan 1: Dari Donat ke Uang</h4>
+                    <p class="text-gray-700 mb-3">Jika kamu ingin membeli sejumlah donat, bagaimana cara menghitung total uang yang dibutuhkan?</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="space-y-2">
+                            <p class="text-sm font-semibold">Lengkapi tabel berikut:</p>
+                            <div class="bg-white p-3 rounded border">
+                                <table class="w-full text-sm">
+                                    <tr class="border-b">
+                                        <th class="text-left py-1">Jumlah Donat (x)</th>
+                                        <th class="text-left py-1">Total Uang</th>
+                                    </tr>
+                                    <tr><td>1</td><td>Rp <input type="text" class="border-b border-gray-400 w-16 text-center bg-transparent" placeholder="____"></td></tr>
+                                    <tr><td>2</td><td>Rp <input type="text" class="border-b border-gray-400 w-16 text-center bg-transparent" placeholder="____"></td></tr>
+                                    <tr><td>3</td><td>Rp <input type="text" class="border-b border-gray-400 w-16 text-center bg-transparent" placeholder="____"></td></tr>
+                                    <tr><td>x</td><td>Rp <input type="text" class="border-b border-gray-400 w-20 text-center bg-transparent" placeholder="____"></td></tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold mb-2">Rumus fungsi:</p>
+                            <div class="bg-white p-3 rounded border-2 border-dashed border-blue-300">
+                                <p class="text-center">f(x) = <input type="text" class="border-b border-gray-400 w-24 text-center bg-transparent" placeholder="______"></p>
+                            </div>
+                            <p class="text-xs text-gray-600 mt-2">Petunjuk: Kalikan jumlah donat dengan harga per donat</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pertanyaan 2 -->
+                <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-400">
+                    <h4 class="font-semibold text-green-700 mb-3">🤔 Pertanyaan 2: Dari Uang ke Donat</h4>
+                    <p class="text-gray-700 mb-3">Sekarang kebalikannya! Jika kamu punya sejumlah uang, bagaimana cara menghitung berapa donat yang bisa dibeli?</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="space-y-2">
+                            <p class="text-sm font-semibold">Lengkapi tabel berikut:</p>
+                            <div class="bg-white p-3 rounded border">
+                                <table class="w-full text-sm">
+                                    <tr class="border-b">
+                                        <th class="text-left py-1">Total Uang (x)</th>
+                                        <th class="text-left py-1">Jumlah Donat</th>
+                                    </tr>
+                                    <tr><td>Rp4.000</td><td><input type="text" class="border-b border-gray-400 w-12 text-center bg-transparent" placeholder="___"> donat</td></tr>
+                                    <tr><td>Rp8.000</td><td><input type="text" class="border-b border-gray-400 w-12 text-center bg-transparent" placeholder="___"> donat</td></tr>
+                                    <tr><td>Rp12.000</td><td><input type="text" class="border-b border-gray-400 w-12 text-center bg-transparent" placeholder="___"> donat</td></tr>
+                                    <tr><td>Rp x</td><td><input type="text" class="border-b border-gray-400 w-16 text-center bg-transparent" placeholder="___"> donat</td></tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold mb-2">Rumus fungsi invers:</p>
+                            <div class="bg-white p-3 rounded border-2 border-dashed border-green-300">
+                                <p class="text-center">f⁻¹(x) = <input type="text" class="border-b border-gray-400 w-24 text-center bg-transparent" placeholder="______"></p>
+                            </div>
+                            <p class="text-xs text-gray-600 mt-2">Petunjuk: Bagi total uang dengan harga per donat</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pertanyaan 3: Discovery -->
+                <div class="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-400">
+                    <h4 class="font-semibold text-purple-700 mb-3">💡 Pertanyaan 3: Menemukan Pola</h4>
+                    <p class="text-gray-700 mb-3">Diskusikan dengan kelompok kalian:</p>
+                    
+                    <div class="space-y-3">
+                        <div class="bg-white p-3 rounded border">
+                            <p class="font-semibold text-sm mb-2">a) Apa hubungan antara f(x) dan f⁻¹(x)?</p>
+                            <textarea class="w-full border border-gray-300 rounded p-2 min-h-[60px] resize-none" placeholder="Tuliskan jawaban Anda di sini..."></textarea>
+                        </div>
+                        
+                        <div class="bg-white p-3 rounded border">
+                            <p class="font-semibold text-sm mb-2">b) Jika f(2) = 8000, maka f⁻¹(8000) = ?</p>
+                            <input type="text" class="w-full border border-gray-300 rounded p-2" placeholder="Tuliskan jawaban Anda di sini...">
+                        </div>
+                        
+                        <div class="bg-white p-3 rounded border">
+                            <p class="font-semibold text-sm mb-2">c) Apa yang terjadi jika kita hitung f(f⁻¹(12000))?</p>
+                            <textarea class="w-full border border-gray-300 rounded p-2 min-h-[60px] resize-none" placeholder="Tuliskan jawaban Anda di sini..."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="mt-4 p-3 bg-indigo-100 rounded-lg">
+                <p class="text-indigo-800 text-center font-semibold">
+                    🎯 Bagus! Kalian sudah memahami konsep dasar fungsi invers dari eksplorasi donat. Sekarang mari terapkan pada soal kelompok dengan langkah-langkah sistematis!
+                </p>
+            </div>
+        </div>
+
+        <!-- Kesimpulan Langkah-langkah -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+            <h3 class="text-lg font-bold text-indigo-700 mb-4 flex items-center">
+                <span class="bg-indigo-100 rounded-full p-2 mr-3">📋</span>
+                Kesimpulan: Langkah-langkah Mencari Fungsi Invers
+            </h3>
+            <p class="text-gray-600 mb-4">Berdasarkan contoh di atas, berikut adalah langkah umum untuk mencari fungsi invers:</p>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="space-y-3">
+                    <div class="flex items-start space-x-3 p-3 bg-blue-50 rounded-lg">
+                        <span class="bg-blue-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">1</span>
+                        <p class="text-gray-700">Ubah notasi $f(x)$ menjadi $y$</p>
+                    </div>
+                    <div class="flex items-start space-x-3 p-3 bg-green-50 rounded-lg">
+                        <span class="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">2</span>
+                        <p class="text-gray-700">Tukar posisi $x$ dan $y$</p>
+                    </div>
+                </div>
+                <div class="space-y-3">
+                    <div class="flex items-start space-x-3 p-3 bg-yellow-50 rounded-lg">
+                        <span class="bg-yellow-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">3</span>
+                        <p class="text-gray-700">Selesaikan untuk mendapatkan $y$</p>
+                    </div>
+                    <div class="flex items-start space-x-3 p-3 bg-purple-50 rounded-lg">
+                        <span class="bg-purple-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">4</span>
+                        <p class="text-gray-700">Tulis sebagai $f^{-1}(x) = y$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Soal Selector -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+            <h3 class="text-lg font-bold text-indigo-700 mb-4 flex items-center">
+                <span class="bg-indigo-100 rounded-full p-2 mr-3">📝</span>
+                Pilih Soal Kelompok Anda
+            </h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-4">
+                <button onclick="selectProblem(1)" class="problem-btn bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-lg font-semibold transition-colors">
+                    Kelompok 1
+                </button>
+                <button onclick="selectProblem(2)" class="problem-btn bg-green-500 hover:bg-green-600 text-white p-3 rounded-lg font-semibold transition-colors">
+                    Kelompok 2
+                </button>
+                <button onclick="selectProblem(3)" class="problem-btn bg-yellow-500 hover:bg-yellow-600 text-white p-3 rounded-lg font-semibold transition-colors">
+                    Kelompok 3
+                </button>
+                <button onclick="selectProblem(4)" class="problem-btn bg-red-500 hover:bg-red-600 text-white p-3 rounded-lg font-semibold transition-colors">
+                    Kelompok 4
+                </button>
+                <button onclick="selectProblem(5)" class="problem-btn bg-purple-500 hover:bg-purple-600 text-white p-3 rounded-lg font-semibold transition-colors">
+                    Kelompok 5
+                </button>
+                <button onclick="selectProblem(6)" class="problem-btn bg-indigo-500 hover:bg-indigo-600 text-white p-3 rounded-lg font-semibold transition-colors">
+                    Kelompok 6
+                </button>
+            </div>
+        </div>
+
+        <!-- Worksheet Area -->
+        <div id="worksheet" class="bg-white rounded-lg shadow-lg p-6 mb-6" style="display: none;">
+            <div id="problem-content"></div>
+            
+            <!-- Langkah Pengerjaan -->
+            <div class="mt-6">
+                <h4 class="text-lg font-bold text-gray-800 mb-4">Langkah Pengerjaan:</h4>
+                
+                <!-- Langkah 1 -->
+                <div class="mb-6 p-4 border-2 border-blue-200 rounded-lg">
+                    <h5 class="font-semibold text-blue-700 mb-2">Langkah 1: Ubah notasi f(x) menjadi y</h5>
+                    <div class="bg-gray-50 p-3 rounded border-2 border-dashed border-gray-300">
+                        <p class="text-gray-500 text-sm mb-2">Tuliskan jawaban Anda di sini:</p>
+                        <textarea class="w-full border border-gray-300 rounded p-2 min-h-[60px] resize-none bg-white" placeholder="Contoh: y = ..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Langkah 2 -->
+                <div class="mb-6 p-4 border-2 border-green-200 rounded-lg">
+                    <h5 class="font-semibold text-green-700 mb-2">Langkah 2: Tukar posisi x dan y</h5>
+                    <div class="bg-gray-50 p-3 rounded border-2 border-dashed border-gray-300">
+                        <p class="text-gray-500 text-sm mb-2">Tuliskan jawaban Anda di sini:</p>
+                        <textarea class="w-full border border-gray-300 rounded p-2 min-h-[60px] resize-none bg-white" placeholder="Contoh: x = ..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Langkah 3 -->
+                <div class="mb-6 p-4 border-2 border-yellow-200 rounded-lg">
+                    <h5 class="font-semibold text-yellow-700 mb-2">Langkah 3: Selesaikan untuk mendapatkan y</h5>
+                    <div class="bg-gray-50 p-3 rounded border-2 border-dashed border-gray-300">
+                        <p class="text-gray-500 text-sm mb-2">Tunjukkan langkah-langkah penyelesaian:</p>
+                        <textarea class="w-full border border-gray-300 rounded p-2 min-h-[80px] resize-none bg-white" placeholder="Tunjukkan langkah-langkah manipulasi aljabar..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Langkah 4 -->
+                <div class="mb-6 p-4 border-2 border-purple-200 rounded-lg">
+                    <h5 class="font-semibold text-purple-700 mb-2">Langkah 4: Tulis sebagai f⁻¹(x)</h5>
+                    <div class="bg-gray-50 p-3 rounded border-2 border-dashed border-gray-300">
+                        <p class="text-gray-500 text-sm mb-2">Jawaban akhir:</p>
+                        <input type="text" class="w-full border border-gray-300 rounded p-2 bg-white font-semibold" placeholder="f⁻¹(x) = ...">
+                    </div>
+                </div>
+
+                <!-- Verifikasi -->
+                <div class="p-4 border-2 border-orange-200 rounded-lg bg-orange-50">
+                    <h5 class="font-semibold text-orange-700 mb-2">Verifikasi: Buktikan bahwa f(f⁻¹(x)) = x</h5>
+                    <div class="bg-white p-3 rounded border-2 border-dashed border-orange-300">
+                        <p class="text-gray-500 text-sm mb-2">Tunjukkan pembuktian:</p>
+                        <textarea class="w-full border border-gray-300 rounded p-2 min-h-[80px] resize-none bg-white" placeholder="Substitusikan f⁻¹(x) ke dalam f(x) dan tunjukkan hasilnya = x"></textarea>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Anggota Kelompok -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+            <h3 class="text-lg font-bold text-indigo-700 mb-4 flex items-center">
+                <span class="bg-indigo-100 rounded-full p-2 mr-3">👥</span>
+                Anggota Kelompok
+            </h3>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="space-y-2">
+                    <div class="flex items-center space-x-2">
+                        <span class="font-semibold">1.</span>
+                        <div class="border-b border-gray-400 flex-1 px-2">_________________________</div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="font-semibold">2.</span>
+                        <div class="border-b border-gray-400 flex-1 px-2">_________________________</div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="font-semibold">3.</span>
+                        <div class="border-b border-gray-400 flex-1 px-2">_________________________</div>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex items-center space-x-2">
+                        <span class="font-semibold">4.</span>
+                        <div class="border-b border-gray-400 flex-1 px-2">_________________________</div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="font-semibold">5.</span>
+                        <div class="border-b border-gray-400 flex-1 px-2">_________________________</div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="font-semibold">6.</span>
+                        <div class="border-b border-gray-400 flex-1 px-2">_________________________</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pesan Motivasi -->
+        <div class="bg-gradient-to-r from-pink-100 to-rose-100 rounded-lg shadow-lg p-6 border-2 border-pink-200">
+            <div class="text-center">
+                <h3 class="text-lg font-bold text-pink-700 mb-3 flex items-center justify-center">
+                    <span class="bg-pink-100 rounded-full p-2 mr-3">💪</span>
+                    Pesan Motivasi
+                </h3>
+                <p class="text-gray-700 italic mb-3">"Setiap langkah kecil dalam belajar adalah kemajuan besar menuju kesuksesan. Jangan takut untuk mencoba dan berbuat salah, karena dari kesalahan itulah kita belajar dan menjadi lebih baik. Percayalah pada kemampuan diri kalian!"</p>
+                <p class="text-pink-600 font-semibold">🌟 Kalian pasti bisa! Semangat belajar! 🌟</p>
+                <p class="text-xs text-gray-500 mt-3">Disusun oleh: Kharunnisa, S.Pd</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        const problems = {
+            1: {
+                function: "f(x) = 2x + 3",
+                step1: "y = 2x + 3",
+                step2: "x = 2y + 3",
+                step3: "x - 3 = 2y\\\\y = \\frac{x - 3}{2}",
+                step4: "f^{-1}(x) = \\frac{x - 3}{2}",
+                hint: "Untuk menyelesaikan x = 2y + 3, kurangi kedua ruas dengan 3, lalu bagi dengan 2.",
+                verification: "f(f^{-1}(x)) = f\\left(\\frac{x-3}{2}\\right) = 2\\left(\\frac{x-3}{2}\\right) + 3 = (x-3) + 3 = x ✓"
+            },
+            2: {
+                function: "f(x) = 4x - 5",
+                step1: "y = 4x - 5",
+                step2: "x = 4y - 5",
+                step3: "x + 5 = 4y\\\\y = \\frac{x + 5}{4}",
+                step4: "f^{-1}(x) = \\frac{x + 5}{4}",
+                hint: "Untuk menyelesaikan x = 4y - 5, tambahkan kedua ruas dengan 5, lalu bagi dengan 4.",
+                verification: "f(f^{-1}(x)) = f\\left(\\frac{x+5}{4}\\right) = 4\\left(\\frac{x+5}{4}\\right) - 5 = (x+5) - 5 = x ✓"
+            },
+            3: {
+                function: "f(x) = \\frac{x}{3} + 7",
+                step1: "y = \\frac{x}{3} + 7",
+                step2: "x = \\frac{y}{3} + 7",
+                step3: "x - 7 = \\frac{y}{3}\\\\y = 3(x - 7) = 3x - 21",
+                step4: "f^{-1}(x) = 3x - 21",
+                hint: "Kurangi kedua ruas dengan 7, lalu kalikan dengan 3 untuk menghilangkan pecahan.",
+                verification: "f(f^{-1}(x)) = f(3x - 21) = \\frac{3x - 21}{3} + 7 = (x - 7) + 7 = x ✓"
+            },
+            4: {
+                function: "f(x) = \\frac{1}{x}, x \\neq 0",
+                step1: "y = \\frac{1}{x}",
+                step2: "x = \\frac{1}{y}",
+                step3: "xy = 1\\\\y = \\frac{1}{x}",
+                step4: "f^{-1}(x) = \\frac{1}{x}, x \\neq 0",
+                hint: "Kalikan kedua ruas dengan y untuk menghilangkan pecahan, lalu selesaikan untuk y.",
+                verification: "f(f^{-1}(x)) = f\\left(\\frac{1}{x}\\right) = \\frac{1}{\\frac{1}{x}} = x ✓"
+            },
+            5: {
+                function: "f(x) = (x - 2)^2, x \\geq 2",
+                step1: "y = (x - 2)^2",
+                step2: "x = (y - 2)^2",
+                step3: "\\sqrt{x} = y - 2\\\\y = \\sqrt{x} + 2",
+                step4: "f^{-1}(x) = \\sqrt{x} + 2, x \\geq 0",
+                hint: "Ambil akar kuadrat kedua ruas. Karena x ≥ 2, maka y - 2 ≥ 0, sehingga √x positif.",
+                verification: "f(f^{-1}(x)) = f(\\sqrt{x} + 2) = ((\\sqrt{x} + 2) - 2)^2 = (\\sqrt{x})^2 = x ✓"
+            },
+            6: {
+                function: "f(x) = \\frac{2x + 1}{x - 1}, x \\neq 1",
+                step1: "y = \\frac{2x + 1}{x - 1}",
+                step2: "x = \\frac{2y + 1}{y - 1}",
+                step3: "x(y - 1) = 2y + 1\\\\xy - x = 2y + 1\\\\xy - 2y = x + 1\\\\y(x - 2) = x + 1\\\\y = \\frac{x + 1}{x - 2}",
+                step4: "f^{-1}(x) = \\frac{x + 1}{x - 2}, x \\neq 2",
+                hint: "Kalikan silang, kumpulkan semua suku yang mengandung y di satu ruas, lalu faktorkan y.",
+                verification: "f(f^{-1}(x)) = f\\left(\\frac{x+1}{x-2}\\right) = \\frac{2\\left(\\frac{x+1}{x-2}\\right) + 1}{\\left(\\frac{x+1}{x-2}\\right) - 1} = x ✓"
+            }
+        };
+
+        let currentProblem = null;
+
+        function selectProblem(num) {
+            currentProblem = num;
+            
+            // Reset button styles
+            document.querySelectorAll('.problem-btn').forEach(btn => {
+                btn.classList.remove('ring-4', 'ring-white', 'ring-opacity-50');
+            });
+            
+            // Highlight selected button
+            event.target.classList.add('ring-4', 'ring-white', 'ring-opacity-50');
+            
+            // Show worksheet
+            document.getElementById('worksheet').style.display = 'block';
+            
+            // Hide hint and solution areas
+            document.getElementById('hint-area').style.display = 'none';
+            document.getElementById('solution-area').style.display = 'none';
+            
+            // Load problem content
+            const problem = problems[num];
+            document.getElementById('problem-content').innerHTML = `
+                <div class="bg-indigo-50 p-4 rounded-lg border-2 border-indigo-200 mb-4">
+                    <h4 class="text-lg font-bold text-indigo-800 mb-2">Soal Kelompok ${num}:</h4>
+                    <p class="text-xl text-center font-semibold">Tentukan invers dari fungsi: $$${problem.function}$$</p>
+                </div>
+            `;
+            
+            // Clear previous content
+            document.getElementById('step1-content').innerHTML = '';
+            document.getElementById('step2-content').innerHTML = '';
+            document.getElementById('step3-content').innerHTML = '';
+            document.getElementById('step4-content').innerHTML = '';
+            document.getElementById('verification-content').innerHTML = '';
+            
+            // Re-render MathJax
+            if (window.MathJax) {
+                MathJax.typesetPromise();
+            }
+            
+            // Scroll to worksheet
+            document.getElementById('worksheet').scrollIntoView({ behavior: 'smooth' });
+        }
+
+
+
+        function showGuidedSteps() {
+            const stepsDiv = document.getElementById('guided-steps');
+            if (stepsDiv.style.display === 'none') {
+                stepsDiv.style.display = 'block';
+                if (window.MathJax) {
+                    MathJax.typesetPromise();
+                }
+            } else {
+                stepsDiv.style.display = 'none';
+            }
+        }
+
+        function showVerification() {
+            const verificationDiv = document.getElementById('verification-answer');
+            if (verificationDiv.style.display === 'none') {
+                verificationDiv.style.display = 'block';
+            } else {
+                verificationDiv.style.display = 'none';
+            }
+        }
+
+        // Initialize MathJax when page loads
+        window.addEventListener('load', function() {
+            if (window.MathJax) {
+                MathJax.typesetPromise();
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97fc8a5454b70d49',t:'MTc1Nzk4NTYxNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
